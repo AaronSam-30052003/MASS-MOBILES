@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MASS-MOBILES</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #d50000;
+      color: white;
+      padding: 10px 20px;
+      position: relative;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .shop-name {
+      font-size: 65px;
+      font-weight: bold;
+    }
+
+    .location {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 14px;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: nowrap;
+      height: 60%;
+      align-items: center;
+    }
+
+    .phone-card {
+      background-color: #fff;
+      border: 2px solid #f44336;
+      border-radius: 10px;
+      width: 240px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(244, 67, 54, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .phone-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(244, 67, 54, 0.4);
+    }
+
+    .phone-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.4s ease;
+    }
+
+    .phone-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .phone-card h3 {
+      margin: 10px 0 5px;
+      color: #d50000;
+      font-size: 18px;
+    }
+
+    .phone-card p {
+      margin: 0;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .contact-section {
+      background-color: #fff5f5;
+      border-top: 2px solid #f44336;
+      padding: 8px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .contact-section h4 {
+      color: #b71c1c;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .contact-section p {
+      margin: 2px 0;
+    }
+
+    @media (max-width: 1024px) {
+      body {
+        overflow: auto;
+      }
+      .container {
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="shop-name">📱 MASS-MOBILES</div>
+    <div class="location">📍 Thoothukudi, Tamil Nadu</div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <div class="phone-card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-1.jpg" alt="iPhone 14 Pro">
+        <h3>iPhone 14 Pro</h3>
+        <p>₹1,29,999</p>
+      </div>
+
+      <div class="phone-card">
+        <img src="https://oxygendigitalshop.com/media/cache/2500x0/catalog/product/-/o/-original-imagx9eftbknvcwg_1705899054.webp" alt="Samsung Galaxy S24">
+        <h3>Samsung Galaxy S24</h3>
+        <p>₹99,999</p>
+      </div>
+
+      <div class="phone-card">
+        <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg" alt="OnePlus 12">
+        <h3>OnePlus 12</h3>
+        <p>₹69,999</p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h4>Contact Us</h4>
+      <p>📞 Contact: +91 73730934143</p>
+      <p>📞 Support: +91 9952674258</p>
+      <p>🏢 Address: 36 South New Street, Thoothukudi-2</p>
+    </div>
+  </div>
+
+</body>
+</html>
